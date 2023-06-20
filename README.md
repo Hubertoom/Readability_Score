@@ -8,7 +8,7 @@ This program determines how difficult the text is and for which age it is most s
 ## Description
 
 ### Automated readability index (ARI) ###
-It was introduced in 1968, and much research works on this. The index is calculated by the following formula:
+It was introduced in 1968, and much research works on this. <br/> The index is calculated by the following formula:
 
 ![image](https://github.com/Hubertoom/Readability_Score/assets/137101859/d7866fde-77e3-4b7d-8fa5-b1a90767f7b7)
 
@@ -31,8 +31,9 @@ More information in [the corresponding article on Wikipedia][https://en.wikipedi
 ### SMOG index ###
 The SMOG grade is a measure of readability that estimates the years of education needed to understand a piece of writing. <br/>
 SMOG is an acronym for "Simple Measure of Gobbledygook". 
-The text should contain at least 30 sentences to determine the correct result.
+The text should contain at least 30 sentences to determine the correct result. <br/>
 The algorithm follows this formula: 
+
 ![image](https://github.com/Hubertoom/Readability_Score/assets/137101859/4dbc8076-e0d1-4182-b681-8b74f169e74f)
 
 More information in [the corresponding article on Wikipedia][https://en.wikipedia.org/wiki/SMOG]
@@ -43,6 +44,7 @@ Like all other indices, the output is a person's grade level. <br/>
 The result is a minimum grade level required to understand this text. <br/>
 Like the ARI, but unlike most of the other indices, Coleman–Liau relies on characters instead of syllables per word.
 Here is the formula:
+
 ![image](https://github.com/Hubertoom/Readability_Score/assets/137101859/fcf01915-34ca-4787-ae9a-32cbc5a475cb)
 
 More information in [the corresponding article on Wikipedia][https://en.wikipedia.org/wiki/Coleman%E2%80%93Liau_index]

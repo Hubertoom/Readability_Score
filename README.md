@@ -25,7 +25,7 @@ The following formula:
 
 ![image](https://github.com/Hubertoom/Readability_Score/assets/137101859/95ae807b-11a1-446a-b4f3-ad818ef88d2c)
 
-More information in [the corresponding article on Wikipedia][https://en.wikipedia.org/wiki/Flesch%E2%80%93Kincaid_readability_tests]
+More information in [the corresponding article on Wikipedia](https://en.wikipedia.org/wiki/Flesch%E2%80%93Kincaid_readability_tests)
 
 
 ### SMOG index ###
@@ -36,7 +36,7 @@ The algorithm follows this formula:
 
 ![image](https://github.com/Hubertoom/Readability_Score/assets/137101859/4dbc8076-e0d1-4182-b681-8b74f169e74f)
 
-More information in [the corresponding article on Wikipedia][https://en.wikipedia.org/wiki/SMOG]
+More information in [the corresponding article on Wikipedia](https://en.wikipedia.org/wiki/SMOG)
 
 
 ### Coleman-Liau index ###
@@ -47,5 +47,5 @@ Here is the formula:
 
 ![image](https://github.com/Hubertoom/Readability_Score/assets/137101859/fcf01915-34ca-4787-ae9a-32cbc5a475cb)
 
-More information in [the corresponding article on Wikipedia][https://en.wikipedia.org/wiki/Coleman%E2%80%93Liau_index]
+More information in [the corresponding article on Wikipedia](https://en.wikipedia.org/wiki/Coleman%E2%80%93Liau_index)
 

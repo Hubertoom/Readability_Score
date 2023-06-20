@@ -20,7 +20,7 @@ You can read more about it [in this article](https://en.wikipedia.org/wiki/Autom
 
 ### Flesch-Kincaid readability tests ###
 
-This algorithm allows you to determine the age of the person for whom the text will be suitable.
+This algorithm allows you to determine the age of the person for whom the text will be suitable. <br/>
 The following formula: 
 
 ![image](https://github.com/Hubertoom/Readability_Score/assets/137101859/95ae807b-11a1-446a-b4f3-ad818ef88d2c)

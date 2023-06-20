@@ -7,30 +7,24 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         File file = new File(args[0]);
-        StringBuilder input = new StringBuilder();
+        String input = readFileToString(file);
 
-        try {
-            Scanner sc = new Scanner(file);
-            while (sc.hasNextLine()) {
-                input.append(sc.nextLine()).append("\n");
-            }
-            sc.close();
-        } catch (FileNotFoundException e) {
-            System.out.println("Error! Doesn't find required file");
-        }
-
-        int words = input.toString().split(" ").length;
-        int characters = input.toString().replace(" ", "").length() - 1;
-        int sentences = input.toString().split("[.?!]\\s*").length;
+        int words = input.split(" ").length;
+        int characters = input.replace(" ", "").length() - 1;
+        int sentences = input.split("[.?!]\\s*").length;
         double score = 4.71 * ((double)characters / words) + 0.5 * ((double)words / sentences) - 21.43;
         String ageRange = ageRange(score);
 
-        System.out.printf("Words: %d \nSentences: %d \nCharacters: %d  \nThe score is: %.2f "
-                + "\nThis text should be understood by %s year olds.",words, sentences, characters, score - 0.005, ageRange);
+        System.out.printf("""
+                Words: %d\s
+                Sentences: %d\s
+                Characters: %d \s
+                The score is: %.2f\s
+                This text should be understood by %s year olds.""",words, sentences, characters, score - 0.005, ageRange);
     }
 
     private static String ageRange(double s) {
-        int score = (int) Math.ceil(s);
+        int score = (int) Math.floor(s);
         if (score < 13) {
             int age1 = score + 5;
             int age2 = score + 6;
@@ -42,5 +36,20 @@ public class Main {
         } else {
             return "24+";
         }
+    }
+
+    private static String readFileToString(File file) {
+        StringBuilder text = new StringBuilder();
+
+        try {
+            Scanner sc = new Scanner(file);
+            while (sc.hasNextLine()) {
+                text.append(sc.nextLine()).append("\n");
+            }
+            sc.close();
+        } catch (FileNotFoundException e) {
+            System.out.println("Error! Doesn't find required file");
+        }
+        return text.toString();
     }
 }

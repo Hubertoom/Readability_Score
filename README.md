@@ -42,7 +42,7 @@ More information in [the corresponding article on Wikipedia][https://en.wikipedi
 ### Coleman-Liau index ###
 Like all other indices, the output is a person's grade level. <br/> 
 The result is a minimum grade level required to understand this text. <br/>
-Like the ARI, but unlike most of the other indices, Coleman–Liau relies on characters instead of syllables per word.
+Like the ARI, but unlike most of the other indices, Coleman–Liau relies on characters instead of syllables per word. <br/>
 Here is the formula:
 
 ![image](https://github.com/Hubertoom/Readability_Score/assets/137101859/fcf01915-34ca-4787-ae9a-32cbc5a475cb)

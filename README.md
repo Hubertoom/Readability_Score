@@ -5,7 +5,7 @@ Everyone has their own personal reading history, and as we grow up, we are able 
 But how do you estimate the difficulty level of a given text, and how do you teach a computer to do that? <br/> 
 This program determines how difficult the text is and for which age it is most suitable.
 
-## Description
+## Description of used algorithms
 
 ### Automated readability index (ARI) ###
 It was introduced in 1968, and much research works on this. <br/> The index is calculated by the following formula:

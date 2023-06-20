@@ -23,7 +23,7 @@ public class Grade {
             case "FK" -> fleshKincaid(words, sentences, syllables);
             case "SMOG" -> smogIndex(polysyllables, sentences);
             case "CL" -> colemanLiauIndex(characters, sentences, words);
-            case "all" -> {
+            case "ALL" -> {
                 automatedReadabilityIndex(words, sentences, characters);
                 fleshKincaid(words, sentences, syllables);
                 smogIndex(polysyllables, sentences);

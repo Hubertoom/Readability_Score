@@ -7,6 +7,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class ReadabilityScoreApp {
+    private final Scanner scanner = new Scanner(System.in);
 
     public void runApp(File file) {
         String input = fileToStringReader(file);
@@ -16,21 +17,24 @@ public class ReadabilityScoreApp {
         int syllables = syllables(input);
         int polysyllables = polysyllables(input);
 
-        System.out.printf("""
-                Words: %d\s
-                Sentences: %d\s
-                Characters: %d\s
-                Syllables: %d \s
-                Polysyllables: %d\s
-                """, words, sentences, characters, syllables, polysyllables);
+        while (true) {
+            System.out.printf("""
+                    Words: %d\s
+                    Sentences: %d\s
+                    Characters: %d\s
+                    Syllables: %d \s
+                    Polysyllables: %d\s
+                    """, words, sentences, characters, syllables, polysyllables);
 
-        System.out.println("Enter the score you want to calculate (ARI, FK, SMOG, CL, all):");
+            System.out.println("Enter the score you want to calculate (ARI, FK, SMOG, CL, ALL). Type \"exit\" to exit");
 
-        Scanner scanner = new Scanner(System.in);
-        String userChoice = scanner.next();
-        Grade grade = new Grade(userChoice, words, sentences, characters, syllables, polysyllables);
+            String userChoice = scanner.nextLine().toUpperCase();
+            if (userChoice.equals("EXIT")) {
+               break;
+            }
+            new Grade(userChoice, words, sentences, characters, syllables, polysyllables);
+        }
         scanner.close();
-
     }
 
     private String fileToStringReader(File file) {

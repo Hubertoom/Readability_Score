@@ -7,7 +7,7 @@ This program determines how difficult the text is and for which age it is most s
 
 ## Description
 
-**Automated readability index (ARI)**
+###Automated readability index (ARI)###
 It was introduced in 1968, and much research works on this. The index is calculated by the following formula:
 
 ![image](https://github.com/Hubertoom/Readability_Score/assets/137101859/d7866fde-77e3-4b7d-8fa5-b1a90767f7b7)
@@ -17,7 +17,7 @@ Below you can see the table that specifies the age brackets.
 
 You can read more about it [in this article](https://en.wikipedia.org/wiki/Automated_readability_index)
 
-**Flesch-Kincaid readability tests**
+###Flesch-Kincaid readability tests###
 
 This algorithm allows you to determine the age of the person for whom the text will be suitable.
 The following formula: 
@@ -26,7 +26,7 @@ The following formula:
 
 More information in [the corresponding article on Wikipedia][https://en.wikipedia.org/wiki/Flesch%E2%80%93Kincaid_readability_tests]
 
-**SMOG index**
+###SMOG index###
 The SMOG grade is a measure of readability that estimates the years of education needed to understand a piece of writing. <br/>
 SMOG is an acronym for "Simple Measure of Gobbledygook". 
 The text should contain at least 30 sentences to determine the correct result.
@@ -35,9 +35,9 @@ The algorithm follows this formula:
 
 More information in [the corresponding article on Wikipedia][https://en.wikipedia.org/wiki/SMOG]
 
-**Coleman-Liau index**
+###Coleman-Liau index###
 Like all other indices, the output is a person's grade level. <br/> 
-Like all other indices, the result is a minimum grade level required to understand this text. <br/>
+The result is a minimum grade level required to understand this text. <br/>
 Like the ARI, but unlike most of the other indices, Coleman–Liau relies on characters instead of syllables per word.
 Here is the formula:
 ![image](https://github.com/Hubertoom/Readability_Score/assets/137101859/fcf01915-34ca-4787-ae9a-32cbc5a475cb)

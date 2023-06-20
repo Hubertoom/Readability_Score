@@ -15,4 +15,4 @@ It was introduced in 1968, and much research works on this. The index is calcula
 Below you can see the table that specifies the age brackets.
 ![image](https://github.com/Hubertoom/Readability_Score/assets/137101859/94329090-bf72-448f-b60d-ccb9443ce95c)
 
-You can read more about it [in this article]([url](https://en.wikipedia.org/wiki/Automated_readability_index)https://en.wikipedia.org/wiki/Automated_readability_index)
+You can read more about it [in this article]([in this article](https://en.wikipedia.org/wiki/Automated_readability_index)https://en.wikipedia.org/wiki/Automated_readability_index)

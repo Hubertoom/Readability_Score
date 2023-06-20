@@ -7,7 +7,7 @@ In this project, you will find it out: write a program that determines how diffi
 
 ## Description
 
-*Automated readability index (ARI)*
+**Automated readability index (ARI)**
 It was introduced in 1968, and much research works on this. The index is calculated by the following formula:
 
 ![image](https://github.com/Hubertoom/Readability_Score/assets/137101859/d7866fde-77e3-4b7d-8fa5-b1a90767f7b7)

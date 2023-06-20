@@ -5,9 +5,23 @@ Everyone has their own personal reading history, and as we grow up, we are able 
 But how do you estimate the difficulty level of a given text, and how do you teach a computer to do that? <br/> 
 This program determines how difficult the text is and for which age it is most suitable.
 
+## How to start
+
+You can simply download an archive, unzip it inside the directory you want to, and open it in your IDE. 
+
+If you want to clone the repo:
+
+- run the command line in the directory you want to store the app and type the following command: 
+  
+``git clone https://github.com/Hubertoom/Readability_Score.git`` 
+    
+- or start with *Project from Version Control* in your IDE by providing the URL of this repository.
+
+If you want to evaluate your text, paste it into the ``input.txt`` file in the project directory.
+
 ## Description of used algorithms
 
-### Automated readability index (ARI) ###
+### Automated readability index (ARI)
 It was introduced in 1968, and much research works on this. <br/> The index is calculated by the following formula:
 
 ![image](https://github.com/Hubertoom/Readability_Score/assets/137101859/d7866fde-77e3-4b7d-8fa5-b1a90767f7b7)
@@ -28,7 +42,7 @@ The following formula:
 More information in [the corresponding article on Wikipedia](https://en.wikipedia.org/wiki/Flesch%E2%80%93Kincaid_readability_tests)
 
 
-### SMOG index ###
+### SMOG index
 The SMOG grade is a measure of readability that estimates the years of education needed to understand a piece of writing. <br/>
 SMOG is an acronym for "Simple Measure of Gobbledygook". 
 The text should contain at least 30 sentences to determine the correct result. <br/>
@@ -39,7 +53,7 @@ The algorithm follows this formula:
 More information in [the corresponding article on Wikipedia](https://en.wikipedia.org/wiki/SMOG)
 
 
-### Coleman-Liau index ###
+### Coleman-Liau index
 Like all other indices, the output is a person's grade level. <br/> 
 The result is a minimum grade level required to understand this text. <br/>
 Like the ARI, but unlike most of the other indices, Coleman–Liau relies on characters instead of syllables per word. <br/>
